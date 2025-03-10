@@ -1,15 +1,129 @@
 body {
-    font: "Roboto", sans;
-
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 button {
     background-color: #3882F6;
+    width: 100px;
+    color: #F9FAF8;
+    font-weight: 700;
+    border-color: #F9FAF8;
+    border-radius: 10px;
+    
 }
 
-.hero, .footer {
+a {
+    text-decoration: none;
+}
+
+.links {
+    margin: 10px;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer {
     background-color: #1F2937;
 }
+
+.header .header-content .left h2 {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+.header .header-content .left p, .header .nav .links a {
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+.left p {
+    width: 300px;
+    height: auto;
+}
+
+.header-content {
+    display: flex;
+    
+}
+
+.header .nav .logo {
+    color: #F9FAF8;
+    font-size: 48px;
+}
+
+.info {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.info-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.boxes {
+    display: flex;
+    gap: 30px;
+}
+
+.box {
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box div {
+    border: 4px solid #3882F6;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.cta-container {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cta {
+    background-color: #3882F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.cta-text {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.cta-text h5, .cta-text p {
+    margin: 0;
+    color:#E5E7EB
+}
+
 
 .quote {
     background-color: #E5E7EB;
@@ -17,4 +131,25 @@ button {
     font-weight: light;
     font-style: italic;
     color: #1F2937;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 100px;
+    align-items: center;
+}
+
+.quote .source {
+    font-size: 25px;
+    font-weight: 800;
+    align-self: flex-end;
+}
+
+.quote p {
+    width: 800px;
+    height: auto;
+}
+
+.footer {
+    color:#E5E7EB;
+    display: flex;
+    justify-content: center;
 }
